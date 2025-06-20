@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: servicely-backend
+    env: docker
+    plan: free
+    branch: main
+    rootDir: .
+    dockerfilePath: ./Dockerfile
+    buildCommand: "composer install && php artisan migrate --force && php artisan storage:link"
+    startCommand: "php artisan serve --host=0.0.0.0 --port=8000"
