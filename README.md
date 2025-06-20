@@ -1,3 +1,3 @@
 # Servicely Backend
 
-Instrucciones para subir a Render.com incluidas aquí...
+Despliegue con Docker en Render.com
